@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>Post</title>
+</head>
+<body>
+    <table>
+        <th>Title</th>
+        <th>Id</th>
+        <th>Create Date</th>
+        <tr>
+            <td>America</td>
+            <td>2923</td>
+            <td>20/09/2023</td>
+        </tr>
+        {% for post in content %}
+        <tr>
+            <td>{{post.Title}}</td>
+            <td>{{post.Id}}</td>
+            <td>{{post.Createdate}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

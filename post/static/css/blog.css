@@ -1,0 +1,25 @@
+/* .title th{
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0 20px;
+}
+.id th{
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+    display: inline-block;
+    list-style: none;
+}
+.cdate th{
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0 20px;
+} */
+
+th, td{
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+}
