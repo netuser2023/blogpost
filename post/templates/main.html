@@ -8,20 +8,20 @@
     <title>Post</title>
 </head>
 <body>
+    <p>Welcome to the Post page!!</p>
     <table>
         <th>Title</th>
         <th>Id</th>
         <th>Create Date</th>
-        <tr>
-            <td>America</td>
-            <td>2923</td>
-            <td>20/09/2023</td>
-        </tr>
+        <th>Image</th>
         {% for post in content %}
         <tr>
             <td>{{post.Title}}</td>
             <td>{{post.Id}}</td>
             <td>{{post.Createdate}}</td>
+            <td>
+                <img src="{% static post.image %}">
+            </td>
         </tr>
         {% endfor %}
     </table>
